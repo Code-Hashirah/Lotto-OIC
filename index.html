@@ -9,12 +9,36 @@
     <title>OIC-Lotto</title>
 </head>
 <body>
-    <div class="container-fluid ">
-        <p class="text-secondary">Enter <span>Two</span> or <span>Three</span> lucky number.</p>
-        <small class="text">Seperate them with comma ","</small>
-      <div class="form-control form-control-sm"></div>
-        <label for="number"> Enter your numbers here</label>
-      <input type="text" id="number" name="number" class="">
+    <p class="h1">Welcome to OIC-Lotto</p>
+
+    <div class="container-fluid bg-black" id="cont">
+        
+      <div class="text-bg-dark justify-content-center row" id="form">
+
+        <div id="text-area" class="col-12 col-md-12">
+        <p class="text-secondary">Enter <span id="two">Two</span> or <span id="three">Three</span> lucky numbers.</p>
+        <small class="text">Seperated with comma ","</small>
+        </div>
+        <div id="input-area" class="col-12 col-md-12">
+            <label for="number"> Enter your numbers here</label>
+            <input type="text" id="number" name="number" class="w-50 h-25 my-3">
+        </div>
+      
+        <div class="row justify-content-center" id="btn">
+            <button class="btn btn-outline-danger col-5 col-sm-4">1</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">2</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">3</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">4</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">5</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">6</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">7</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">8</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4">9</button>
+            <button class="btn btn-outline-danger col-5 col-md-6" >0</button>
+            <button class="btn btn-outline-danger col-6 col-sm-6">,</button>
+            <!-- <button class="btn btn-outline-danger col-5 col-sm-4"></button> -->
+        </div>
+    </div>
     </div>
     <!-- =============================Script===================================== -->
     <script src="app.js"></script>
