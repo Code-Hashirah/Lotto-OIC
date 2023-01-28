@@ -1,5 +1,5 @@
 // let number=document.getElementById('number').innerHTML;
-let number='13,16,19'
+let number='71,11,26'
 let  user_guess=[];
 const comp_guess=[]
 let rand;
@@ -16,13 +16,19 @@ function junk(){
     count=0;
     let l=0;
     for(values of user_guess){
-        if(values==comp_guess[l]){
+        for(Valus of comp_guess ){
+             if(values==Valus){
             count++
         }
         l++;
+        }
+       
     }
-    if(count==3){
-        console.log("success")
+    if(count==3 && user_guess.length==3){
+        console.log("success! Three direct ")
+    }
+    else if(count==2 && user_guess.length==2){
+          console.log("success! Two Sure ")
     }
     else{
         console.log("Not it bruv")
