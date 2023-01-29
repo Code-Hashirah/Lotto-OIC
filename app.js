@@ -53,6 +53,9 @@ function Input(a){
 document.getElementById('number').value+=a;
 }
 
+function display1(){
+    document.getElementById('number').value=document.getElementById('number').value.slice(0,-1);
+}
 // console.log(comp_guess);
 // console.log(user_guess);
 // console.log(rand)

@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: flexbox;
+    /* background-image: linear-gradient(180deg, white, blue); */
+    background-image: linear-gradient( white,rgb(19, 32, 32), rgb(120, 120, 150));
+}
 #cont{
     width: 100%;
     padding: 15px;
@@ -10,14 +15,16 @@
 }
 #two{
     transform: rotate(3deg);
-    color: white;
+    color: rgb(0, 30, 255);
     font-size: larger;
+    font-weight: bold;
 }
 
 #three{
     transform: rotate(3deg);
     color: red;
     font-size: larger;
+    font-weight: bold;
 }
 p{
     text-align: center;
@@ -40,6 +47,9 @@ p{
     display: flex;
     padding: 10px;
     height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #number{
     height: 35px;
@@ -47,7 +57,7 @@ p{
 }
 @keyframes glow{
    0%{
-        background-color: red;
+        background-color: rgb(200, 14, 14);
         box-shadow: 0 0 3px red;
     }
 
@@ -57,8 +67,8 @@ p{
         
     }
     100%{
-        background-color: red;
-        box-shadow: 0 0 3px red;
+        background-color: rgb(0, 34, 255);
+        box-shadow: 0 0 3px rgb(0, 94, 255);
     }
 }
 #play-btn{
@@ -66,4 +76,35 @@ p{
     border-radius: 20px;
     font-size: 16px;
     font-family: 'Trebuchet MS';
+}
+
+.rectangle{
+    width: 70%;
+    min-height: 70px;
+    background-color: gray;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 20px gray;
+    margin: auto;
+    flex-grow: 1;
+}
+h3{
+color: rgb(56, 39, 56);
+flex-shrink: 1;
+flex-wrap: wrap;
+text-align: center;
+}
+.footer{
+    background-image:linear-gradient(180deg, white, rgb(84, 84, 162));
+    display: flex;
+    justify-content: center;
+}
+.heading-footer{
+    margin: auto;
+}
+#input-area{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 }
