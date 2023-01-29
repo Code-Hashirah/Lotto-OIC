@@ -20,26 +20,33 @@
         <small class="text">Seperated with comma ","</small>
         </div>
         <div id="input-area" class="col-12 col-md-12">
+            <p id="result"></p>
             <label for="number"> Enter your numbers here</label>
-            <input type="text" id="number" name="number" class="w-50 h-25 my-3">
+            <input type="text" id="number" name="number" class="w-50 my-3">
+           
         </div>
       
         <div class="row justify-content-center" id="btn">
-            <button class="btn btn-outline-danger col-5 col-sm-4">1</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">2</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">3</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">4</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">5</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">6</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">7</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">8</button>
-            <button class="btn btn-outline-danger col-5 col-sm-4">9</button>
-            <button class="btn btn-outline-danger col-5 col-md-6" >0</button>
-            <button class="btn btn-outline-danger col-6 col-sm-6">,</button>
-            <!-- <button class="btn btn-outline-danger col-5 col-sm-4"></button> -->
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('1')">1</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('2')">2</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('3')">3</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('4')">4</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('5')">5</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('6')">6</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('7')">7</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('8')">8</button>
+            <button class="btn btn-outline-danger col-5 col-sm-4" onclick="Input('9')">9</button>
+            <button class="btn btn-outline-danger col-5 col-md-6" onclick="Input('0')" >0</button>
+            <button class="btn btn-outline-danger col-6 col-sm-6" onclick="Input(',')">,</button>
+           
         </div>
+        <button class="btn btn-light w-25 h-auto" id="play-btn" onclick="junk()">All or Nothing</button>
+        <p class="text-secondary" id="userNum"></p>
+        <p id="computerNum" class="text-secondary"></p>
     </div>
     </div>
+    <button class="btn btn-outline-danger col-5 col-sm-4" onclick="convertToArray()">Test</button>
+    
     <!-- =============================Script===================================== -->
     <script src="app.js"></script>
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
