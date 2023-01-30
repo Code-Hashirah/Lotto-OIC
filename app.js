@@ -33,15 +33,18 @@ function junk(){
     }
     if(count==3 && user_guess.length==3){
         console.log("success! Three direct ")
-        document.getElementById('result').innerHTML="You just won! Three direct";
+        document.getElementById('result').innerHTML="You just won! 24,00 NGN Three direct";
+        count=0
     }
     else if(count==2 && user_guess.length==2){
           console.log("success! Two Sure ")
-          document.getElementById('result').innerHTML="You just won!  Two Sure";
+          document.getElementById('result').innerHTML="You just won 24,00 NGN!  Two Sure";
+          count=0
     }
     else{
         console.log("Not it bruv")
         document.getElementById('result').innerHTML="Oh! You lost, but take heart you can win again by tossing in a 100 NGN";
+        count=0
     }
     document.getElementById('userNum').innerHTML="Your Numbers are "+user_guess;
 document.getElementById('computerNum').innerHTML="The lucky Numbers are "+comp_guess;
