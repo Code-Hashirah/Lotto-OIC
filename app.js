@@ -27,6 +27,11 @@ function junk(){
              if(values==Valus){
             count++
         }
+
+        else if(values>=100){
+            window.alert("Error! Number must be less than 100")
+        }
+
         l++;
         }
        
@@ -41,6 +46,11 @@ function junk(){
           document.getElementById('result').innerHTML="You just won 24,00 NGN!  Two Sure";
           count=0
     }
+else if(user_guess.length>3){
+   window.alert("Invalid Input, only enter maximum of three numbers")
+   document.getElementById('userNum').innerHTML="Invalid";
+}
+
     else{
         console.log("Not it bruv")
         document.getElementById('result').innerHTML="Oh! You lost, but take heart you can win again by tossing in a 100 NGN";
